@@ -203,8 +203,8 @@ if __name__ == "__main__":
   labels = collections.defaultdict(set)
   stats = collections.defaultdict(int)
   minimize_language("english", labels, stats)
-  minimize_language("chinese", labels, stats)
-  minimize_language("arabic", labels, stats)
+  #minimize_language("chinese", labels, stats)
+  #minimize_language("arabic", labels, stats)
   for k, v in labels.items():
     print("{} = [{}]".format(k, ", ".join("\"{}\"".format(label) for label in v)))
   for k, v in stats.items():
