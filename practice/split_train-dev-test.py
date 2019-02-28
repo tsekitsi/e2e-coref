@@ -19,7 +19,7 @@ dev_mark = train_mark + int(num_paths*percent_dev/100)
 
 try:
   os.mkdir('train')
-  os.mkdir('development')
+  os.mkdir('dev')
   os.mkdir('test')
 except:
   pass
@@ -33,7 +33,7 @@ while counter < train_mark:
 
 #Development:
 while counter < dev_mark:
-  shutil.copy(paths[counter], 'development')
+  shutil.copy(paths[counter], 'dev')
   counter += 1
 
 #Testing:
@@ -52,5 +52,5 @@ def cat(foldername):
           outfile.write(line)
   os.chdir('..')
 cat('train')
-cat('development')
+cat('dev')
 cat('test')
