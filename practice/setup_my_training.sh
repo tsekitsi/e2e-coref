@@ -1,7 +1,3 @@
-cat train/* >> train.v4_gold_conll
-cat development/* >> dev.v4_gold_conll
-cat test/* >> test.v4_gold_conll
-
 python ../minimize.py
 python ../get_char_vocab.py
 
