@@ -45,7 +45,7 @@ while counter < num_paths:
 def cat(foldername):
   os.chdir(foldername)
   filenames = os.listdir()
-  with open('../'+foldername+'.v4_gold_conll', 'w') as outfile:
+  with open('../'+foldername+'.english.v4_gold_conll', 'w') as outfile:
     for fname in filenames:
       with open(fname) as infile:
         for line in infile:
