@@ -2,12 +2,12 @@ import os
 import shutil
 import random
 
-paths = os.listdir("../WikiCoref/WikiCoref-CoNLL")
+paths = os.listdir("WikiCoref/WikiCoref-CoNLL")
 random.seed(4) # just for consistency
 random.shuffle(paths) 
 
 for i in range(len(paths)):
-  paths[i] = "../WikiCoref/WikiCoref-CoNLL/" + paths[i]
+  paths[i] = "WikiCoref/WikiCoref-CoNLL/" + paths[i]
 
 percent_taining=80
 percent_dev=10
